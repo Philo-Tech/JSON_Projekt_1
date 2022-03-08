@@ -1,0 +1,13 @@
+{
+    "id": 124,
+    "name": "Lukasz",
+    "student": false,
+    "age": 30,
+    "colors": [
+      "red", "blue", "green"
+    ],
+    "address": {
+      "streetName": "warszwska",
+      "city": "Warszawa"
+    }
+}
