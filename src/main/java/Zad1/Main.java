@@ -35,5 +35,8 @@ public class Main {
         } catch (JsonProcessingException e) {
             e.printStackTrace();
         }
+        RestClient restClient = new RestClient();
+        String resultResponse = restClient.getResponseInString(200);
+        System.out.println(resultResponse);
     }
 }
