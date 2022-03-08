@@ -8,28 +8,31 @@
     <artifactId>JSON_Projekt_1</artifactId>
     <version>1.0.0</version>
 
+
+
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
+        <jacksonVersion>LATEST</jacksonVersion>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-core</artifactId>
-            <version>2.13.1</version>
+            <version>${jacksonVersion}</version>
         </dependency>
 
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-            <version>2.13.1</version>
+            <version>${jacksonVersion}</version>
         </dependency>
 
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-annotations</artifactId>
-            <version>2.13.1</version>
+            <version>${jacksonVersion}</version>
         </dependency>
 
         <!--<dependency>
