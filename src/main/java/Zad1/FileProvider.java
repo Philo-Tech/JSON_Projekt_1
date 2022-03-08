@@ -33,8 +33,8 @@ public class FileProvider {
             e.printStackTrace();
         }
     }
-    // metoda czyta plik i zwraca String
-    public String readJSONFile(String fileName){
+
+    public String parseJSONFileToString(String fileName){
         BufferedReader bufferedReader;
         StringBuilder result = new StringBuilder();
         try {
