@@ -1,0 +1,28 @@
+[ {
+  "id": 124,
+  "userName": "Lukasz",
+  "student": false,
+  "age": 30,
+  "colors": [
+    "red", "blue", "green"
+  ],
+  "adress": {
+    "streetName": "warszwska",
+    "city": "Warszawa"
+  }
+},
+
+  {
+    "id": 130,
+    "userName": "Tomek",
+    "student": false,
+    "age": 34,
+    "colors": [
+      "black", "blue", "green"
+    ],
+    "adress": {
+      "streetName": "Poznańska",
+      "city": "Poznań"
+    }
+  }
+]

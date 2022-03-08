@@ -1,10 +1,15 @@
 package Zad1;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.util.Arrays;
 
 public class PersonModel { // jak coś przychodzi z zewnątrz to w nazwie "Model", czyli odzwierciedlenie czegoś
 
     private int id;
+    @JsonProperty(value = "userName") // padnie ktoraś metoda bo zmieniłęm w "personsTab.json"
+                                        // ale ze zmieniłem "objectMapper.configure", to wypluje "NULL" jak nie rozpozna
     private String name;
     private boolean student;
     private int age;

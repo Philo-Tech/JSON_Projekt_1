@@ -1,4 +1,4 @@
-{
+  {
     "id": 124,
     "name": "Lukasz",
     "student": false,
@@ -10,4 +10,4 @@
       "streetName": "warszwska",
       "city": "Warszawa"
     }
-}
+  }
