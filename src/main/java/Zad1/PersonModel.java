@@ -13,9 +13,7 @@ public class PersonModel { // jak coś przychodzi z zewnątrz to w nazwie "Model
                 private String streetName;
                 private String city;
             }
-
 }
-
 
 
 /*

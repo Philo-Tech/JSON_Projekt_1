@@ -40,9 +40,11 @@ public class FileProvider {
         try {
             bufferedReader = new BufferedReader(new FileReader(path + fileName));
             String line = bufferedReader.readLine();
+            result.append(line);
             while (line != null) {
                 line = bufferedReader.readLine();
-                result.append(line);
+                if (line !=null)
+                result.append(line.replaceAll("\\s+",""));//s-> biały znak | + -> jeden lub więcej
             }
         } catch (IOException e) {
             e.printStackTrace();
