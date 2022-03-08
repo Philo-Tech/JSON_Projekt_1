@@ -34,7 +34,7 @@ public class FileProvider {
         }
     }
 
-    public String parseJSONFileToString(String fileName){
+    public String parseJSONFileToString(String fileName) {
         BufferedReader bufferedReader;
         StringBuilder result = new StringBuilder();
         try {
@@ -43,8 +43,8 @@ public class FileProvider {
             result.append(line);
             while (line != null) {
                 line = bufferedReader.readLine();
-                if (line !=null)
-                result.append(line.replaceAll("\\s+",""));//s-> biały znak | + -> jeden lub więcej
+                if (line != null)
+                    result.append(line.replaceAll("\\s+", ""));//s-> biały znak | + -> jeden lub więcej
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -52,8 +52,7 @@ public class FileProvider {
         return result.toString();
     }
 
-
-    public void createFileFromCollectio(String fileName, List<String> list){
+    public void createFileFromCollectio(String fileName, List<String> list) {
         Path pathWithName = Paths.get(this.path + fileName);
 
         try {
